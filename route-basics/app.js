@@ -4,13 +4,13 @@ const app = express()
 const PORT = 3000
 
 
-//Setting up body parser to use JSON
-app.use(bodyParser.json())
+// //Setting up body parser to use JSON
+// app.use(bodyParser.json())
 
 
-app.get('/', (req,res) => {
-    res.send("Hello Express")
-})
+// app.get('/', (req,res) => {
+//     res.send("Hello Express")
+// })
 
 app.get('/movies',(req,res) =>{
     
@@ -24,13 +24,13 @@ app.get('/movies',(req,res) =>{
     res.json(movies)
 })
 
-app.post('/movies', (req, res) => {
-    const title = req.body.title
-    const year = req.body.year
+// app.post('/movies', (req, res) => {
+//     const title = req.body.title
+//     const year = req.body.year
 
-    console.log(title, year)
-})
-// movies/genre/year/
-app.listen(PORT, () => {
-    console.log("Server is running on Port 3000")
-})
+//     console.log(title, year)
+// })
+// // movies/genre/year/
+// app.listen(PORT, () => {
+//     console.log("Server is running on Port 3000")
+// })

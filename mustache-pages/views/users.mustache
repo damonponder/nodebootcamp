@@ -4,6 +4,8 @@
 
 <body>
 
+{{> menu}}
+
 <h1>This is a users Page</h1>
 
 <ul>
@@ -15,6 +17,12 @@
 {{name}} - {{age}}
 
 </li>
+
+{{^users}}
+
+<h1>No users exist...</h1>
+
+{{/users}}
 
 {{/users}}
 </ul>
